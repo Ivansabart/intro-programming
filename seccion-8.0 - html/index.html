@@ -1,0 +1,290 @@
+<!-- 
+  Probar elementos HTML desde: 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+-->
+
+<!-- 
+  Opcionalmente, consultar:
+  https://www.w3schools.com/html/default.asp }
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 8.0</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cute Puppies Express!</h1>
+      <nav class="crumbs">
+        <ol>
+          <li class="crumb"><a href="#">Bikes</a></li>
+          <li class="crumb"><a href="#">BMX</a></li>
+          <li class="crumb">Jump Bike 3000</li>
+        </ol>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- <a> element links to the section below -->
+    <p><a href="#Section_further_down"> Jump to the heading below </a></p>
+
+    <hr />
+
+    <main>
+      <h1>Forecast information</h1>
+
+      <aside>
+        <p>See the forecast html articles</p>
+      </aside>
+
+      <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+          <h2>03 March 2018</h2>
+          <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+          <h2>04 March 2018</h2>
+          <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+          <h2>05 March 2018</h2>
+          <p>Heavy rain.</p>
+        </article>
+      </article>
+
+      <hr />
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          This document provides a guide to help with the important task of
+          choosing the correct Apple.
+        </p>
+      </section>
+
+      <section>
+        <h2>Criteria</h2>
+        <p>
+          There are many different criteria to be considered when choosing an
+          Apple — size, color, firmness, sweetness, tartness...
+        </p>
+      </section>
+
+      <hr />
+
+      <ol>
+        <li>Mix flour, baking powder, sugar, and salt.</li>
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+        <li>Stir both mixtures together.</li>
+        <li>Fill muffin tray 3/4 full.</li>
+        <li>Bake for 20 minutes.</li>
+      </ol>
+      <hr />
+
+      <figure>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <p>
+            Words can be like X-rays, if you use them properly—they’ll go
+            through anything. You read and you’re pierced.
+          </p>
+        </blockquote>
+        <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+      </figure>
+
+      <figure>
+        <pre role="img" aria-label="ASCII COW">
+      ___________________________
+  &lt; I'm an expert in my field. &gt;
+      ---------------------------
+          \   ^__^
+           \  (oo)\_______
+              (__)\       )\/\
+                  ||----w |
+                  ||     ||
+  </pre
+        >
+        <figcaption id="cow-caption">
+          A cow saying, "I'm an expert in my field." The cow is illustrated
+          using preformatted text characters.
+        </figcaption>
+      </figure>
+    </main>
+
+    <hr />
+
+    <menu>
+      <li><button onclick="copy()">Copy</button></li>
+      <li><button onclick="cut()">Cut</button></li>
+      <li><button onclick="paste()">Paste</button></li>
+    </menu>
+
+    <hr />
+
+    <ul>
+      <li>first item</li>
+      <li>
+        second item
+        <!-- Look, the closing </li> tag is not placed here! -->
+        <ol>
+          <li>second item first subitem</li>
+          <li>second item second subitem</li>
+          <li>
+            second item third subitem
+            <ul>
+              <li>Milk</li>
+              <li>
+                Cheese
+                <ul>
+                  <li>Blue cheese</li>
+                  <li>Feta</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <!-- Here is the closing </li> tag -->
+      </li>
+      <li>third item</li>
+    </ul>
+
+    <div>
+      <h2>Cryptids of Cornwall:</h2>
+      <dl>
+        <dt>Beast of Bodmin</dt>
+        <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+        <dt>Morgawr</dt>
+        <dd>A sea serpent.</dd>
+
+        <dt>Owlman</dt>
+        <dd>A giant owl-like creature.</dd>
+      </dl>
+    </div>
+
+    <hr />
+
+    <p>
+      Ashok's joke made me <abbr title="Laugh Out Loud"><b>LOL</b></abbr> big
+      time.
+    </p>
+    <hr />
+
+    <!-- Heading to link to -->
+    <h2 id="Section_further_down">Section further down</h2>
+
+    <hr />
+
+    <h1>World wrestling championships</h1>
+
+    <ul>
+      <li><bdi>Evil Steven</bdi>: 1st place</li>
+      <li><bdi>François fatale</bdi>: 2nd place</li>
+      <li><span>تیز سمی</span>: 3rd place</li>
+      <li><bdi>الرجل القوي إيان</bdi>: 4th place</li>
+      <li><span dir="auto">تیز سمی</span>: 5th place</li>
+    </ul>
+
+    <hr />
+
+    <h1>Famous seaside songs</h1>
+
+    <p>The English song "Oh I do like to be beside the seaside"</p>
+
+    <p>
+      Looks like this in Hebrew:
+      <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span>
+    </p>
+
+    <p>
+      In the computer's memory, this is stored as
+      <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo>
+    </p>
+
+    <hr />
+
+    <p>
+      O’er all the hilltops<br />
+      Is quiet now,<br />
+      In all the treetops<br />
+      Hearest thou<br />
+      Hardly a breath;<br />
+      The birds are asleep in the trees:<br />
+      Wait, soon like these<br />
+      Thou too shalt rest.
+    </p>
+
+    <hr />
+
+    <figure>
+      <blockquote>
+        <p>
+          It was a bright cold day in April, and the clocks were striking
+          thirteen.
+        </p>
+      </blockquote>
+      <figcaption>
+        First sentence in
+        <cite>
+          <a target="_blank" href="http://www.george-orwell.org/1984/0.html"
+            >Nineteen Eighty-Four
+          </a>
+        </cite>
+        by George Orwell (Part 1, Chapter 1).
+      </figcaption>
+    </figure>
+
+    <hr />
+
+    <p>
+      The <code>push()</code> method adds one or more elements to the end of an
+      array and returns the new length of the array.
+    </p>
+
+    <hr />
+
+    <p>New Products:</p>
+    <ul>
+      <li><data value="398">Mini Ketchup</data></li>
+      <li><data value="399">Jumbo Ketchup</data></li>
+      <li><data value="400">Mega Jumbo Ketchup</data></li>
+    </ul>
+
+    <hr />
+
+    <p>
+      A <dfn id="def-validator">validator</dfn> is a program that checks for
+      syntax errors in code or documents.
+    </p>
+
+    <hr />
+
+    <p>Get out of bed <em>now</em>!</p>
+
+    <p>We <em>had</em> to do something about it.</p>
+
+    <p>This is <em>not</em> a drill!</p>
+
+    <p>
+      In HTML 5, what was previously called
+      <em>block-level</em> content is now called <em>flow</em> content.
+    </p>
+
+    <hr />
+
+    <footer>
+      <p>Contact the author of this page:</p>
+      <address>
+        <a href="mailto:jim@rock.com">jim@rock.com</a><br />
+        <a href="tel:+13115552368">(311) 555-2368</a>
+      </address>
+      <p>© 2018 Gandalf</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
